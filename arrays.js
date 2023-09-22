@@ -45,3 +45,14 @@ numeros.forEach((num)=> {console.log(num)})
 var numeros = [1,2,3,4];
 var masUnos =numeros.map((num)=>{return num+1});
 console.log(masUnos);
+// FOR
+var arr = [1,2,3,4,5];
+for (i = 0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+//While
+var arr = [];
+while (arr.length <5){
+    arr.push("camilo");
+}
+console.log(arr);
