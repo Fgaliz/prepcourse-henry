@@ -27,3 +27,30 @@ console.log(autos.marcas);
 //BORRAR
 delete autos.marcas;
 console.log(autos);
+
+// HAS OWN PROPERTY
+var libro = { autor: 'Borges', genero: 'Policial', año: 1990 };
+var tienePropiedad = libro.hasOwnProperty('nombre');
+
+console.log(tienePropiedad);
+
+// KEYS
+var libro = { autor: 'Borges', genero: 'Policial', año: 1990 };
+var todasLasPropiedades = Object.keys(libro);
+
+console.log(todasLasPropiedades);
+
+// BRACKET NOTATION
+atuendos['piernas'] = ['Bermudas', 'Pantalones'];
+console.log(atuendos);
+
+// FOR IN in objects
+var mundo = {
+    continentes : 7,
+    paises : 195,
+    oceanos : 5
+}
+for (var prop in mundo){
+    console.log("esta es la propiedad: "+prop);
+    console.log("este es el valor: "+mundo[prop]);
+}
